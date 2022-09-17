@@ -53,7 +53,6 @@ namespace CalculatorDelegate
             this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            this.BackColor = System.Drawing.Color.FromArgb(6, 30, 54);
             // 
             // panel1
             // 
@@ -276,7 +275,7 @@ namespace CalculatorDelegate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(6, 30, 54);
             this.ClientSize = new System.Drawing.Size(757, 695);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button2);
