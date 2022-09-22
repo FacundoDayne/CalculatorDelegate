@@ -87,7 +87,7 @@ namespace CalculatorDelegate
             this.past.MaximumSize = new System.Drawing.Size(700, 32);
             this.past.MinimumSize = new System.Drawing.Size(700, 32);
             this.past.Name = "past";
-            this.past.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.past.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.past.Size = new System.Drawing.Size(700, 32);
             this.past.TabIndex = 0;
             // 
@@ -239,6 +239,7 @@ namespace CalculatorDelegate
             this.equals.TabIndex = 12;
             this.equals.Text = "=";
             this.equals.UseVisualStyleBackColor = false;
+            this.equals.Click += new System.EventHandler(this.equals_Click);
             // 
             // plus
             // 
@@ -253,6 +254,7 @@ namespace CalculatorDelegate
             this.plus.TabIndex = 13;
             this.plus.Text = "+";
             this.plus.UseVisualStyleBackColor = false;
+            this.plus.Click += new System.EventHandler(this.plus_Click);
             // 
             // divide
             // 

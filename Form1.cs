@@ -5,7 +5,7 @@ namespace CalculatorDelegate
     public partial class Form1 : Form
     {
         public static Form1 formInstance;
-        programDelegate doot;
+        programDelegate doot; functionDelegate boot;
         public Form1()
         {
             InitializeComponent(); formInstance = this;
@@ -62,6 +62,17 @@ namespace CalculatorDelegate
         {
             doot = new programDelegate(Program.num9);
             present.Text = doot(present.Text.ToString()).ToString();
+        }
+
+        private void plus_Click(object sender, EventArgs e)
+        {
+            boot = new functionDelegate(Program.plus);
+            past.Text = boot(past.Text.ToString(), present.Text.ToString()).ToString();
+        }
+
+        private void equals_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
